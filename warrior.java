@@ -7,10 +7,6 @@ public class warrior extends character {
 
     public warrior(String name, String job) {
         super(name, job);
-
-
-
-
     }
 
     void display(){
