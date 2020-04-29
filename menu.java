@@ -13,6 +13,7 @@ public class menu {
     }
 
 
+
     public void setJob(String job) {
         this.job = job;
     }
