@@ -28,17 +28,9 @@ public class character {
     this.job = job;
 
   }
-
-
-
   //displays a character
   void display(){
       System.out.println("Name: "+this.name);
       System.out.println("Job: "+this.job);
-//      System.out.println("Strength: "+this.strength);
-//      System.out.println("Dexterity: "+this.dexterity);
-//      System.out.println("Constitution: "+this.constitution);
-//      System.out.println("Wisdom: "+this.wisdom);
-//      System.out.println("Intelligence: "+this.intelligence);
     }
 }

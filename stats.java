@@ -16,6 +16,23 @@ public class stats {
     public stats(int[] statWeight) {
 
         int[] statRoll = generalStats();
+
+        //stat modifier
+        for(int i = 0; i < statRoll.length; i++){
+            if (statRoll[i] >= 18){
+                statRoll[i] += 2;
+            }
+            if (statRoll[i] >= 16 && statRoll[i] < 18){
+                statRoll[i] += 1;
+            }
+            if (statRoll[i] <= 9 && statRoll[i] > 8){
+                statRoll[i] -= 1;
+            }
+            if (statRoll[i] <= 8){
+                statRoll[i] -= 2;
+            }
+        }
+
         Arrays.sort(statRoll);
 
         this.strength = statRoll[statWeight[0]];
@@ -43,6 +60,26 @@ public class stats {
 
     public int getIntelligence() {
         return intelligence;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
+    }
+
+    public void setConstitution(int constitution) {
+        this.constitution = constitution;
+    }
+
+    public void setWisdom(int wisdom) {
+        this.wisdom = wisdom;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
     }
 
     //STATS ROLL
