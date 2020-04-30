@@ -1,6 +1,6 @@
 <h1># RPG---Java</h1>
-character creator using Java
-Alternate version can be seen in <a href="https://github.com/howlcipher/rpg">Go</a> and <a href="https://github.com/howlcipher/RPG---Python">Python</a>.
+character creator using Java<br>
+Alternate versions can be seen in <a href="https://github.com/howlcipher/rpg">Go</a> and <a href="https://github.com/howlcipher/RPG---Python">Python</a>.
   
   
 <strong>This is a Pen and Paper style character creation.  Currently this is a work in progress.</strong>
