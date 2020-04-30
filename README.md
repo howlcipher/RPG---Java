@@ -10,9 +10,9 @@ Typically the word class is used to describe the characters function such as "wa
 
 <h2>Jobs include:</h2>
 <ol>
-  <li><font color="red">WARRIOR</font></li>
-  <li><font color="blue">WIZARD</font></li>
-  <li><font color="green">ROGUE</font></li>
-  <li><font color="cyan">CLERIC</font></li>
-<li><font color="purple">User Created</font></li>
+  <li>WARRIOR</li>
+  <li>WIZARD</li>
+  <li>ROGUE</li>
+  <li>CLERIC</li>
+<li>User Created</li>
 </ol>
