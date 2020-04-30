@@ -1,5 +1,5 @@
 <h1># RPG---Java</h1>
-character creator using Java<br>
+<h2>Character creator using Java</h2><br>
 Alternate versions can be seen in <a href="https://github.com/howlcipher/rpg">Go</a> and <a href="https://github.com/howlcipher/RPG---Python">Python</a>.
   
   
