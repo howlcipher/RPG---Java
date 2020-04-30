@@ -28,10 +28,14 @@ public class menu {
                 return cleric;
             default:
                 character noCharacter = new character(this.name, this.job);
-                System.out.println("No character created. " + this.job.substring(0,1).toUpperCase() + this.job.substring(1).toLowerCase() + " is not valid.");
+                System.out.println("No character created. " + capitalize(this.job) + " is not valid.");
                 noCharacter.display();
                 return noCharacter;
         }
+    }
+
+    private String capitalize(String word){
+        return word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase();
     }
 
     public String getName() {
