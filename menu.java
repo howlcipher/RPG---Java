@@ -11,7 +11,7 @@ public class menu {
         System.out.print("Enter your characters name: ");
         setName(input.nextLine());
         System.out.println("Pre-made jobs include: Warrior, Cleric, Rogue, and Wizard");
-        System.out.print("Enter " + this.getName() + "(')s job: ");
+        System.out.print("Enter " + capitalize(this.getName()) + "(')s job: ");
         setJob(input.nextLine());
 
         switch (this.job.toUpperCase()) {
