@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class warrior extends character {
 
     private int[] warWeight = {4,2,3,0,1};

@@ -3,17 +3,10 @@ import java.util.Arrays;
 
 class Main {
   public static void main(String[] args) {
-    String job = "Warrior";
-    switch (job.toUpperCase()){
-      case "WARRIOR":
-        character Thor = new warrior("Thor", job);
-        Thor.display();
-      default:
-        System.out.println("No character created.");
-        break;
-    }
-
-
+    String name = "Test";
+    String job = "madeup";
+    menu characterMenu = new menu();
+    characterMenu.menu(name,job);
 
   }
 }
