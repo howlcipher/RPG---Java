@@ -1,15 +1,20 @@
+import java.util.Scanner;
+
 public class menu {
     private String name;
     private String job;
 
+    Scanner input = new Scanner(System.in);
 
     public character menu(String name, String job) {
-        setName(name);
-        setJob(job);
-        this.name = getName();
-        this.job = getJob();
+        System.out.println("Let make a character!");
+        System.out.print("Enter your characters name: ");
+        setName(input.nextLine());
+        System.out.println("Pre-made jobs include: Warrior, Cleric, Rogue, and Wizard");
+        System.out.print("Enter " + this.getName() + "(')s job: ");
+        setJob(input.nextLine());
 
-        switch (job.toUpperCase()) {
+        switch (this.job.toUpperCase()) {
             case "WARRIOR":
                 character warrior = new warrior(this.name, this.job);
                 warrior.display();
@@ -27,15 +32,15 @@ public class menu {
                 cleric.display();
                 return cleric;
             default:
-                character noCharacter = new character(this.name, this.job);
-                System.out.println("No character created. " + capitalize(this.job) + " is not valid.");
-                noCharacter.display();
-                return noCharacter;
+                character userCreatedCharacter = new character(this.name, this.job);
+                System.out.println("New class created. " + capitalize(this.job) + " is user created.");
+                userCreatedCharacter.display();
+                return userCreatedCharacter;
         }
     }
 
-    private String capitalize(String word){
-        return word.substring(0,1).toUpperCase() + word.substring(1).toLowerCase();
+    private String capitalize(String word) {
+        return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
     }
 
     public String getName() {

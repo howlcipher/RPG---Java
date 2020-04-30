@@ -18,17 +18,17 @@ public class stats {
         int[] statRoll = generalStats();
 
         //stat modifier
-        for(int i = 0; i < statRoll.length; i++){
-            if (statRoll[i] >= 18){
+        for (int i = 0; i < statRoll.length; i++) {
+            if (statRoll[i] >= 18) {
                 statRoll[i] += 2;
             }
-            if (statRoll[i] >= 16 && statRoll[i] < 18){
+            if (statRoll[i] >= 16 && statRoll[i] < 18) {
                 statRoll[i] += 1;
             }
-            if (statRoll[i] <= 9 && statRoll[i] > 8){
+            if (statRoll[i] <= 9 && statRoll[i] > 8) {
                 statRoll[i] -= 1;
             }
-            if (statRoll[i] <= 8){
+            if (statRoll[i] <= 8) {
                 statRoll[i] -= 2;
             }
         }
@@ -97,7 +97,6 @@ public class stats {
         //returns and array of ints
         return stats;
     }
-
 
 
 }

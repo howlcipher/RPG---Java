@@ -1,20 +1,20 @@
 import java.util.Random;
 
 public class dice {
-  int sides;
-  Random rand = new Random();
+    int sides;
+    Random rand = new Random();
 
-  public dice(int x) {
-    sides =x;
-  }
+    public dice(int x) {
+        sides = x;
+    }
 
 
-  int roll(int x){
-    return rand.nextInt(x+1-1)+1;
-  }
-  
-   int statRoll(){
-    return rand.nextInt(20+1-8)+8;
-  }
+    public int roll() {
+        return rand.nextInt(this.sides + 1 - 0) + 0;
+    }
+
+    public int statRoll() {
+        return rand.nextInt(20 + 1 - 8) + 8;
+    }
 
 }
