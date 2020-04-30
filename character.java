@@ -8,7 +8,7 @@ public class character {
     public int[] randomStatPriority() {
         int[] randomStatsWeights = new int[5];
         int i;
-
+        //need to only allow one occurrence of each number
         for (i = 0; i < 5; i++) {
             int roll = d4.roll();
             randomStatsWeights[i] = roll;
