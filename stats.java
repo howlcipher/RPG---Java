@@ -13,11 +13,12 @@ public class stats {
     private int wisdom;
     private int intelligence;
 
+    //create general stats
     public stats(int[] statWeight) {
 
         int[] statRoll = generalStats();
 
-        //stat modifier
+        //stat modifier based on base number
         for (int i = 0; i < statRoll.length; i++) {
             if (statRoll[i] >= 18) {
                 statRoll[i] += 2;
@@ -32,9 +33,9 @@ public class stats {
                 statRoll[i] -= 2;
             }
         }
-
+        //sort array to make the character weights choose the appropriate stats per category
         Arrays.sort(statRoll);
-
+        //general weights
         this.strength = statRoll[statWeight[0]];
         this.dexterity = statRoll[statWeight[1]];
         this.constitution = statRoll[statWeight[2]];
@@ -42,6 +43,7 @@ public class stats {
         this.intelligence = statRoll[statWeight[4]];
     }
 
+    //stat getters and setters
     public int getStrength() {
         return strength;
     }

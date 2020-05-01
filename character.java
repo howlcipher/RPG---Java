@@ -4,7 +4,7 @@ public class character {
     private String job;
     private dice d4 = new dice(4);
 
-
+    //generate random weights for a created character
     public int[] randomStatPriority() {
         int[] randomStatsWeights = new int[5];
         int i;
@@ -16,10 +16,10 @@ public class character {
         return randomStatsWeights;
     }
 
-
+    //create random stats using the random weights
     private stats genStats = new stats(randomStatPriority());
 
-
+    //getters and setters for name and job
     public String getName() {
         return name;
     }
@@ -36,7 +36,7 @@ public class character {
         this.job = job;
     }
 
-
+    //general character constructor
     public character(String name, String job) {
         this.name = name;
         this.job = job;

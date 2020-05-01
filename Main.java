@@ -3,10 +3,9 @@ import java.util.Arrays;
 
 class Main {
     public static void main(String[] args) {
-        String name = "Test";
-        String job = "madeup";
+        //call the menu to create a new character
         menu characterMenu = new menu();
-        characterMenu.menu(name, job);
+        characterMenu.menu();
 
     }
 }

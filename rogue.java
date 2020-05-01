@@ -1,13 +1,15 @@
 public class rogue extends character {
 
-
+    //rogue stat weight and stat generation
     private int[] rogWeight = {2, 4, 1, 0, 3};
     private stats rogueStats = new stats(rogWeight);
 
+    //rogue constructor
     public rogue(String name, String job) {
         super(name, job);
     }
 
+    //display rogue
     void display() {
         System.out.println("Name: " + getName());
         System.out.println("Job: " + getJob());
