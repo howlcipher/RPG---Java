@@ -3,10 +3,55 @@ import java.util.Scanner;
 public class menu {
     private String name;
     private String job;
+    private int menuOption;
 
-    Scanner input = new Scanner(System.in);
+    public void mainMenu() {
+        Scanner menuInput = new Scanner(System.in);
+        //main menu
+        System.out.println("Menu Options type the number of the menu option");
+        System.out.println("1. Create new character\n2. Load character from file\n" +
+                "3.Save character to file\n4.Edit character\n5. Delete character\n 6. Quit\n");
+        System.out.println("Please enter a number (1 - 5)");
+        setMenuOption(menuInput.nextInt());
+        menuInput.close();
+        switch (menuOption) {
+            case 1:
+                //create new character
+            case 2:
+                //load character
+            case 3:
+                //save character
+            case 4:
+                //edit character
+            case 5:
+                //delete character
+            case 6:
+                //quit program
+            default:
+                //repeat menu display of options
+
+        }
+
+    }
+
+    public character saveMenu(character c) {
+        //save a character
+        return c;
+    }
+
+    public character loadMenu(character c) {
+        //save a character
+        return c;
+    }
+
+    public character editMenu(character c) {
+        //save a character
+        return c;
+    }
 
     public character menu() {
+        Scanner input = new Scanner(System.in);
+
         System.out.println("Let make a character!");
         System.out.print("Enter your characters name: ");
         //create the characters name
@@ -15,6 +60,7 @@ public class menu {
         System.out.print("Enter " + capitalize(this.getName()) + "(')s job: ");
         //create the job
         setJob(input.nextLine());
+        input.close();
 
         //switch case based on job selected
         switch (this.job.toUpperCase()) {
@@ -67,5 +113,13 @@ public class menu {
 
     public void setJob(String job) {
         this.job = job;
+    }
+
+    public int getMenuOption() {
+        return menuOption;
+    }
+
+    public void setMenuOption(int menuOption) {
+        this.menuOption = (int) menuOption;
     }
 }
